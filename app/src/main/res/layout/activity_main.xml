@@ -140,9 +140,10 @@
             android:layout_weight="1"
             />
         <Button
+            android:id="@+id/btnIfElse"
             android:layout_width="match_parent"
             android:layout_height="40dp"
-            android:text="Button"
+            android:text="If Else"
             android:layout_weight="1"
             />
         <Button

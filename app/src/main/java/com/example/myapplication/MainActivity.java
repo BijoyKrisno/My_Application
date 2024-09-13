@@ -17,7 +17,8 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity {
-    Button btnFac, btnTabji, btnPC, btnsum, btntem, btnpera, btnage, btnmetter, btnpower, btnpicaso;
+    Button btnFac, btnTabji, btnPC, btnsum, btntem, btnpera, btnage, btnmetter, btnpower, btnpicaso,
+            btnIfElse;
     TextView titleText;
     Animation animation;
 
@@ -40,6 +41,8 @@ public class MainActivity extends AppCompatActivity {
         btnmetter=findViewById(R.id.btnmeter);
         btnpower=findViewById(R.id.btnpower);
         btnpicaso=findViewById(R.id.btnpicaso);
+        btnIfElse = findViewById(R.id.btnIfElse);
+
 
 
 
@@ -168,6 +171,18 @@ public class MainActivity extends AppCompatActivity {
           startActivity(picasoIntent);
             }
         });
+        //===========================  ===========//
+
+        //==================    =============//
+
+
+        btnIfElse.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                startActivity(new Intent(MainActivity.this, Activity_If_Else.class));
+            }
+        });
 
 
 
@@ -194,8 +209,6 @@ public class MainActivity extends AppCompatActivity {
 
 
     }
-
-
 
 
 
