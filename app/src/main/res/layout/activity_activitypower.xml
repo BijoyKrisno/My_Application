@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activitypower">
+    <EditText
+        android:id="@+id/edtpower1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Type base here"/>
+    <EditText
+        android:id="@+id/edtpower2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Type power here"/>
+    <Button
+        android:id="@+id/btnpower"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Result"
+        />
+    <TextView
+        android:id="@+id/tvdpower"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#470F0F"
+        />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="squre root"
+            android:gravity="center"
+            android:textSize="30sp"
+            />
+
+
+    <EditText
+        android:id="@+id/edtsqure1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Type power here"/>
+    <Button
+        android:id="@+id/btnsqure"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Result"
+        />
+    <TextView
+        android:id="@+id/tvdsqure"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#470F0F"
+        />
+
+
+
+    <EditText
+        android:id="@+id/edti"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Input Your Number"
+        />
+    <Button
+        android:id="@+id/btni"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Make Star"/>
+    <TextView
+        android:id="@+id/tvdi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+
+
+
+
+
+</LinearLayout>

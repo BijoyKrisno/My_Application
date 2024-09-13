@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity_Perimeter">
+
+    <EditText
+        android:id="@+id/edtpera1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Enter Length"
+        android:textSize="10sp"
+        />
+
+    <EditText
+        android:id="@+id/edtpera2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Enter Hight"
+        android:textSize="10sp"
+        />
+    <Button
+        android:id="@+id/btnpera"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Result"
+        android:textSize="15sp"
+        android:padding="5dp"
+        />
+    <TextView
+        android:id="@+id/tvdpera"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textSize="20sp"
+        />
+</LinearLayout>
