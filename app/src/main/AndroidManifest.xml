@@ -15,6 +15,9 @@
         android:theme="@style/Theme.MyApplication"
         tools:targetApi="31">
         <activity
+            android:name=".Activityloop"
+            android:exported="false" />
+        <activity
             android:name=".Activity_If_Else"
             android:exported="false" />
         <activity

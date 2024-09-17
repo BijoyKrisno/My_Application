@@ -6,9 +6,101 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Activity_If_Else"
-    android:background="#6EDB7E"
+    android:orientation="vertical"
+    android:background="#BAAC3A"
+
     >
 
+<EditText
+    android:id="@+id/edtnum1"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:hint="type the number"
+    android:textSize="20dp"
+    />
+    <EditText
+        android:id="@+id/edtnum2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="type the number"
+        android:textSize="20dp"
+        />
+    <EditText
+        android:id="@+id/edtnum3"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="type the number"/>
+    <EditText
+        android:id="@+id/edtnum4"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="type the number"
+        />
+    <EditText
+        android:id="@+id/edtnum5"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="type the number"
+        />
+
+    <Button
+        android:id="@+id/btnnumber"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Click Here"
+
+        />
+    <Button
+        android:id="@+id/btnnumber2"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Click Here"
+
+        />
+    <Button
+        android:id="@+id/btnnumber3"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Possitive Or Negetive"
+        />
+    <Button
+        android:id="@+id/btnnumber4"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Divided by 5 or 11"
+        />
+    <Button
+        android:id="@+id/btnnumber5"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Even Or Odd"
+        />
+    <Button
+        android:id="@+id/btnnumber6"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Leap Or Common Year"
+        />
+    <Button
+        android:id="@+id/btnnumber7"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="RESULT"
+        />
+    <Button
+        android:id="@+id/btnnumber8"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="ELECTRYCITY BILL"
+        />
+    <TextView
+        android:id="@+id/tvdnumber"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textSize="20dp"
+        android:background="#2DB832"
+
+        />
 
 
 

@@ -1,10 +1,120 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".ActivityCalc">
+    <EditText
+        android:id="@+id/edtbuy"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Buying Price"
+        android:textSize="20dp"
+        android:padding="10dp"
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        />
+    <EditText
+        android:id="@+id/edtsell"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Buying Price"
+        android:textSize="20dp"
+        android:padding="10dp"
+
+        />
+    <Button
+        android:id="@+id/btnbs"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Buy and Sell"
+        android:textSize="20dp"
+
+        />
+    <Button
+        android:id="@+id/btnhm"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="How much"
+        android:textSize="20dp"
+
+        />
+    <TextView
+        android:id="@+id/tvdbs"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+
+
+        />
+    <TextView
+        android:id="@+id/tvdbmi1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="40sp"
+        android:padding="10dp"
+        android:text="Your Weight-"
+        android:textSize="20dp"
+
+        />
+    <EditText
+        android:id="@+id/edtbmi1"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:hint="Type Here"
+        android:textSize="20dp"
+
+        />
+
+
+    <TextView
+        android:id="@+id/tvdbmi2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="40sp"
+        android:padding="10dp"
+        android:text="Your Hight-"
+        android:textSize="20dp"
+
+        />
+    <EditText
+        android:id="@+id/edtbmi2"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:hint="Type Here fit"
+        android:textSize="20dp"
+
+        />
+    <EditText
+        android:id="@+id/edtbmi3"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:hint="Type Here Inch"
+        android:textSize="20dp"
+
+        />
+    <Button
+        android:id="@+id/btnbmi"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textSize="20sp"
+        android:text="BMI Calculator"
+        />
+    <TextView
+        android:id="@+id/tvdbmi3"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="40sp"
+        android:padding="10dp"/>
+
+
+
+
+
+
+
+</LinearLayout>
