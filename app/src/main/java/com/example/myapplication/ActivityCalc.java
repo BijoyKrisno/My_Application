@@ -88,6 +88,7 @@ public class ActivityCalc extends AppCompatActivity {
               int bmim= (int) ((fint*0.3048)+(iint*0.0254));
               int bmi=wint/(bmim)^2;
               tvdbmi3.setText(" "+bmi);
+              int a;
 
 
               }
