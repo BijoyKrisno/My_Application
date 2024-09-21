@@ -17,7 +17,8 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity {
-    Button btnFac, btnTabji, btnPC, btnsum, btntem, btnpera, btnage, btnmetter, btnpower, btnpicaso, btnloop, btnIfElse;
+    Button btnFac, btnTabji, btnPC, btnsum, btntem, btnpera, btnage, btnmetter, btnpower, btnpicaso, btnloop, btnIfElse,
+            btntTtoS,btnexit, buttonInternet;
     TextView titleText;
     Animation animation;
 
@@ -42,6 +43,9 @@ public class MainActivity extends AppCompatActivity {
         btnpicaso=findViewById(R.id.btnpicaso);
         btnIfElse = findViewById(R.id.btnIfElse);
         btnloop=findViewById(R.id.btnLoop);
+        btntTtoS=findViewById(R.id.btntTtoS);
+        btnexit=findViewById(R.id.exit);
+        buttonInternet=findViewById(R.id.Internet);
 
 
 
@@ -194,10 +198,34 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(loopIntent);
             }
         });
+        /////////////////====== Text To Speach Strt Here===========/////////////////////
+
+        btntTtoS.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent ttosIntent = new Intent(MainActivity.this, TtoSActivity.class);
+                startActivity(ttosIntent);
+            }
+        });
+        /////////////////////====EXIT HERE==========/////////////////////////
+
+btnexit.setOnClickListener(new View.OnClickListener() {
+    @Override
+    public void onClick(View v) {
+        Intent exitIntent=new Intent(MainActivity.this,ExitActivity.class);
+        startActivity(exitIntent);
+    }
+});
+//////////////////=========Internet Activity Start Here===============/////////////////////
 
 
-
-
+buttonInternet.setOnClickListener(new View.OnClickListener() {
+    @Override
+    public void onClick(View v) {
+        Intent internetIntent=new Intent(MainActivity.this,InternetActivity.class);
+        startActivity(internetIntent);
+    }
+});
 
 
 
@@ -221,6 +249,8 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-
-
+    @Override
+    public void onBackPressed() {
+        //super.onBackPressed();
+    }
 }

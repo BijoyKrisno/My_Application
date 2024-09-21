@@ -166,22 +166,28 @@
         android:orientation="horizontal"
         android:weightSum="3"
         >
+
         <Button
+            android:id="@+id/btntTtoS"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:text="Text To Speach"
+            />
+
+        <Button
+            android:id="@+id/exit"
             android:layout_width="match_parent"
             android:layout_height="40dp"
-            android:text="Button"
+            android:text="Exit"
             android:layout_weight="1"
             />
         <Button
+            android:id="@+id/Internet"
             android:layout_width="match_parent"
             android:layout_height="40dp"
-            android:text="Button"
-            android:layout_weight="1"
-            />
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:text="Button"
+            android:text="Internet"
             android:layout_weight="1"
             />
 
