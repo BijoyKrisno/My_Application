@@ -22,16 +22,16 @@ public class InternetActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_internet);
-        btnInternet=findViewById(R.id.btnIfElse);
+        btnInternet=findViewById(R.id.btnInternet);
         tvdIntenet=findViewById(R.id.tvdInternet);
 
         btnInternet.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                ConnectivityManager connectivityManager= (ConnectivityManager) (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
+                ConnectivityManager connectivityManager = (ConnectivityManager) (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
                 NetworkInfo networkInfo=connectivityManager.getActiveNetworkInfo();
-                if (networkInfo!=null && networkInfo.isConnected()){
+                if (networkInfo!=null && networkInfo.isConnectedOrConnecting()){
                     tvdIntenet.setText("Your Network Is Connected");
                 } else {
                     tvdIntenet.setText("No Internet ");

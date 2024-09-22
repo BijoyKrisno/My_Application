@@ -204,15 +204,17 @@
         android:weightSum="3"
         >
         <Button
+            android:id="@+id/btnmp3"
             android:layout_width="match_parent"
             android:layout_height="40dp"
-            android:text="Button"
+            android:text="MP3"
             android:layout_weight="1"
             />
         <Button
+            android:id="@+id/btnmp3player"
             android:layout_width="match_parent"
             android:layout_height="40dp"
-            android:text="Button"
+            android:text="mp3 player"
             android:layout_weight="1"
             />
         <Button

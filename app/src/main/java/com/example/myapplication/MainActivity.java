@@ -18,7 +18,7 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity {
     Button btnFac, btnTabji, btnPC, btnsum, btntem, btnpera, btnage, btnmetter, btnpower, btnpicaso, btnloop, btnIfElse,
-            btntTtoS,btnexit, buttonInternet;
+            btntTtoS,btnexit, buttonInternet, btnmp3, btnmp3player;
     TextView titleText;
     Animation animation;
 
@@ -46,6 +46,8 @@ public class MainActivity extends AppCompatActivity {
         btntTtoS=findViewById(R.id.btntTtoS);
         btnexit=findViewById(R.id.exit);
         buttonInternet=findViewById(R.id.Internet);
+        btnmp3=findViewById(R.id.btnmp3);
+        btnmp3player=findViewById(R.id.btnmp3player);
 
 
 
@@ -227,6 +229,28 @@ buttonInternet.setOnClickListener(new View.OnClickListener() {
     }
 });
 
+/////////////////////////========MP3 Music Here========////////////////////////
+
+        btnmp3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+Intent mp3=new Intent(MainActivity.this, Mp3Activity.class);
+startActivity(mp3);
+            }
+        });
+        //////////////////====MP3 Player Start Here==========/////////////
+
+
+
+        btnmp3player.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent mp3playerIntent=new Intent(MainActivity.this, Mp3PlayerActivity.class);
+                startActivity(mp3playerIntent);
+            }
+        });
+
 
 
 
@@ -252,5 +276,7 @@ buttonInternet.setOnClickListener(new View.OnClickListener() {
     @Override
     public void onBackPressed() {
         //super.onBackPressed();
+        super.onBackPressed();
+        super.onBackPressed();
     }
 }
